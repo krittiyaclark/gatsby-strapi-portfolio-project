@@ -9,13 +9,17 @@ module.exports = {
   siteMetadata: {
     title: "Portfolio",
     description: "This is Portfolio Site",
-    author: "@webdev",
+    author: "@portfolio",
     twitterUsername: "@yourtwitter",
+    image: "/hero-img.png",
+    siteUrl: "https://gatsby-strapi-portfolio-project-live.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-source-strapi`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
